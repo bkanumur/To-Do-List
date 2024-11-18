@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive To-Do List with Recycle Bin</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background"></div>
+  <div class="container">
+    <header>
+      <h1>🌟 Fun To-Do List 🌟</h1>
+      <p class="level">Level: 1 | Points: <span class="points">0</span></p>
+    </header>
+    <form class="form">
+      <input type="text" class="input" placeholder="Enter your task" autocomplete="off" />
+      <input type="date" class="date-picker" />
+      <select class="priority">
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+      <button type="submit" class="add-btn">Add Task</button>
+    </form>
+    <div class="buttons">
+      <button class="clear-btn">Clear All Tasks</button>
+      <button class="recycle-bin-btn">View Recycle Bin</button>
+    </div>
+    <div class="progress-bar-container">
+      <div class="progress-bar"></div>
+    </div>
+    <ul class="list"></ul>
+    <div class="recycle-bin">
+      <h2>Recycle Bin</h2>
+      <ul class="recycle-list"></ul>
+      <button class="empty-recycle-bin-btn">Empty Recycle Bin</button>
+    </div>
+    <footer>
+      <p>Complete all tasks to unlock a surprise! 🎉</p>
+    </footer>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
